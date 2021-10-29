@@ -1,0 +1,44 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<div class='score-wrapper'>
+	<span>Score: </span>
+	<span id="scoreNum">0</span>
+</div>
+
+<div class="top-instructions">
+	<p>Use Left/Right Arrow keys Or A/D To Move</p>
+</div>
+
+<div class="instruction">
+	<p class="Yellow">Yellow: 100</p>
+	<span>Orange: 200</span>
+	<span>Red: 300</span>
+	<span>Rare: 1000</span>
+<div class="bomb">
+	<span>Black: -</span>
+	<img class='heartEx' src="heart.png">
+</div>
+</div>
+
+<div id="heart-wrapper">
+</div>
+
+<div class="fixed inset-0 flex items-center justify-center" 
+	id="modalEl">
+	<div class="bg-white max-w-md w-full p-6 text-center"> 
+		<h1 class="text-4xl font-bold leading-none" 
+			id="BigScoreEl">0</h1>
+		<p class="text-sm text-gray-700 mb-4">Points</p>
+		<div>
+		<button class="bg-yellow-500 text-black w-full py-3 rounded-full text-sm" 
+		id="startGameBtn">
+			Start Game
+		</button>			
+		</div>
+	</div>
+</div>
+
+<canvas>
+</canvas>
+
+<script type="text/javascript" src="./script.js"></script>

@@ -1,0 +1,96 @@
+body {
+	margin: 0;
+	background: black;
+}
+
+.top-instructions {
+	color: white;
+	position: fixed;
+	left: 39%;
+}
+
+.score-wrapper {
+	position: fixed;
+	color: white;
+	font-size: 1.5em;
+	margin-top: 8px;
+	margin-left: 8px;
+}
+
+.instruction {
+	position: fixed;
+	margin-top: 7%;
+	margin-left: 8px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.instruction span {
+	margin-bottom: 5px;
+	font-size: 1em;
+}
+
+.Yellow {
+	color: yellow;
+	margin-bottom: 5px;
+}
+
+.instruction span:nth-child(2) {
+	color: orange;
+}
+
+.instruction span:nth-child(3) {
+	color: red;
+}
+
+.instruction span:nth-child(4) {
+	color: #00FFBB;
+}
+
+.bomb span {
+	float: left;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.heartEx {
+	width: 2%;
+	float:left;
+	margin-top: 0.35%;
+	margin-left: 0.25%;
+}
+
+#heart-wrapper {
+	margin-right: 1.5%;
+}
+
+.heart {
+	float: right;
+	width: 4%;
+	margin: 3px;
+}
+
+.rareColor {
+	background: linear-gradient(to right, #159957, #155799);
+}
+
+canvas {
+	background: lightblue;
+	position: absolute;  
+	left: 50%;
+	margin-left: -33%; 
+	top: 50%;
+	margin-top:-300px; 
+	border:2px solid white;
+	z-index: -1;
+}
+
+#main {
+	position: fixed;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
